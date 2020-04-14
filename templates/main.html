@@ -1,0 +1,144 @@
+<!-- Главная -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!--[if IE 7]>
+ <style>
+ #menu ul.menu li ul.submenu {display: block; float: none; width:210px; margin-left:-145px;}
+ .head1 {padding-top:7px;}
+ .head2 {padding-top:7px;}
+</style>
+<![endif]-->
+<!--[if IE 6]>
+<style>
+ #menu ul.menu li ul.submenu {display: block; float: none; width:210px; margin-left:-145px;}
+ .head1 {padding-top:7px;}
+ .head2 {padding-top:7px;}
+</style>
+<![endif]-->
+<title>$(sectionTitle) - $(siteTitle)</title>
+<script type="text/javascript" src="$(httpRoot)style/rounded-corners-min.js"> </script>
+<meta http-equiv="Content-Type" content="text/html; windows-1251" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18654621-1']);
+  _gaq.push(['_setDomainName', '.economyofregion.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+function clear_comment() {
+elem = document.getElementById('qsearch');
+if ( elem.value == 'Search...') {
+			elem.value = '';
+			elem.style.color = "black";
+		}
+		return;
+	}
+</script>
+<link rel='stylesheet' href='$(httpRoot)style/style.css?v=1' type='text/css' />
+</head>
+<body>
+<div id="header">
+  <div id="wrapper_head">
+    <div class="head1"> <img src="$(httpRoot)style/images/head1.png" alt="" /> </div>
+    <div class="head_items">
+      <div id="book"> <a href="$(httpRoot)"><img src="$(httpRoot)style/images/book.png" alt="" /> </a></div>
+      <div id="search">
+        <form action="$(httpRoot)search/" method="post">
+	      <div>
+		    <input type="hidden" name="action" value="search" />
+            <input type="text" name="q" id="qsearch" class="search_field" onfocus="javascript: clear_comment()" value="Search..." />
+            <input type="submit" class="search_button" value="..." />
+		  </div>
+        </form>
+      </div>
+      <div id="n"> <a href="http://www.uiec.ru/"><img src="$(httpRoot)style/images/n.png" alt="" /></a> </div>
+      <div id="logo"> <a href="$(httpRoot)"><img src="$(httpRoot)style/images/logo.png" alt="" /> </a></div>
+    </div>
+    <div class="head2"> <img src="$(httpRoot)style/images/head3.png" alt="" /> </div>
+  </div>
+  <div id="line"></div>
+</div>
+
+  <div id="wrapper_menu">
+    <div id="menu"> $(menu_main) </div>
+  </div>
+
+
+
+<div>
+  <div class="number"> 
+   <span class="number_content">№</span> 
+   <span class="number_content_red">$(journal_number)</span> 
+   <span class="number_content_year">$(journal_year)</span> 
+   <span class="title_content">"Economy of region" $(journal_title)</span>
+    <hr />
+  </div>
+</div>
+<div id="container">
+  <div id="content">
+    <div id="left">
+      <div class="image_left"> <img src="$(httpRoot)style/images/image_left.png" alt="" /> </div>
+    </div>
+    <div id="main">
+      <div class="middle">
+        <div id="news_bg">
+          <div id="news_bg_mar">
+            <div id="news_bg2" class="rounded rc10 b2">
+		$(main_news)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="some_info" style="margin-top: -30px;"> <span class="link_left">&rarr; <a href="$(httpRoot)about/">About</a></span><br />
+        $(Content) <br />
+<!--        <a class="link_left" href="#">Archive</a>&nbsp; <a class="link_left" href="#" title="">How to...</a> --> </div>
+    </div>
+  </div>
+</div>
+<div id="sidebar">
+  <!-- disabled <div class="news_head"> <img src="$(httpRoot)style/images/right_top.png" alt="" /> </div>
+  <div class="right_bg"> $(news_right) 	<div class="right_news_end"></div></div>
+  <div style="height:20px;width:1px;"></div>
+  -->
+  <div class="news_head"> <img src="$(httpRoot)style/images/right_top.png" alt="" /> </div>
+  <div class="right_bg"> 
+	$(right_banners) 
+	<div class="right_news_end"></div>
+  </div>
+</div>
+<div class="clearing"> &nbsp; </div>
+<div id="footer">
+  <div class="footer">
+    <div class="foot_left"> <img src="$(httpRoot)style/images/foot1.jpg" alt="" /> </div>
+    <div class="footer__content">
+      <p class="footer__copyright footer__item">
+        Copyright (c) 2005-2016 <b><a href="http://uiec.ru" style="text-decoration:none;color:#5F6A83;">Institute of Economics</a></b>, UB RAS. All rights reserved.
+      </p>
+      <a class="foot_link footer__item" href="$(httpRoot)contacts/">Contacts</a>
+      <div class="footer__item footer__item--issn">
+        <p class="footer__issn">ISSN 2072-6414 (Print)</p>
+        <p class="footer__issn">ISSN 2411-1406 (e-ISSN)</p>
+      </div>
+      <div class="footer__item">
+        <img width="20" src="$(httpRoot)style/images/lock-orange.png" alt="lock">
+      </div>
+    </div>
+    <!--    <div class="foot_text">-->
+    <!--	Copyright (c) 2005-2016 <b><a href="http://uiec.ru" style="text-decoration:none;color:#5F6A83;">Institute of Economics</a></b>, the Ural branch of the RAS. All rights reserved.<br />-->
+    <!--      <a class="foot_link" href="$(httpRoot)contacts/">Contacts</a> </div>-->
+    <div class="foot_right"> <img src="$(httpRoot)style/images/foot3.jpg" alt="" /> </div>
+  </div>
+</div>
+</body>
+</html>
